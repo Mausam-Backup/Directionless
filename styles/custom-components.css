@@ -2162,6 +2162,15 @@
   .features-globe-container {
     display: none;
   }
+  .features-card-title {
+    font-size: 1.8em !important;
+  }
+  .features-card-desc {
+    font-size: 1.15em !important;
+  }
+  .features-card-link {
+    font-size: 1.25em !important;
+  }
 }
 
 .features-title {
@@ -3692,6 +3701,7 @@
   border-bottom: 1px solid var(--dark-grey);
   position: relative;
   z-index: 1;
+  background: var(--light);
 }
 
 .companion-content-wrapper {
@@ -3701,6 +3711,7 @@
   min-height: 0;
   position: relative;
   z-index: 1;
+  background: var(--light);
 }
 
 .chat-messages::-webkit-scrollbar {
