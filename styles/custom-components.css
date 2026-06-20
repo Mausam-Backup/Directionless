@@ -973,7 +973,7 @@
   height: 55svh;
 }
 .grey-section-footer {
-  padding-top: var(--toppadding--pc);
+  padding-top: 4em;
 }
 .footer-layout {
   height: 100svh;
@@ -2125,7 +2125,7 @@
    FEATURES SECTION
 ========================= */
 .features-section {
-  padding: 8em 0 10em;
+  padding: 8em 0 2em;
   position: relative;
   z-index: 15;
 }
@@ -3413,5 +3413,217 @@
     width: 180px;
     height: 180px;
     margin: 0 auto;
+  }
+}
+
+/* ============================================================
+   DECISION MATRIX MODAL
+   ============================================================ */
+
+.matrix-container {
+  max-width: 800px;
+}
+
+.matrix-header {
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.matrix-input-phase, .matrix-dashboard-phase {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.matrix-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.matrix-option-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  background-color: var(--grey);
+  border: 1px solid var(--dark-grey);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--dark);
+}
+
+.matrix-option-btn:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.matrix-option-label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.matrix-dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.matrix-back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--darker-grey);
+  transition: color 0.3s ease;
+}
+
+.matrix-back-link:hover {
+  color: var(--dark);
+}
+
+.matrix-slider-section {
+  padding: 2em 0;
+}
+
+.matrix-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.label-immediate { color: var(--dark); }
+.label-projected { color: var(--darker-grey); }
+
+.matrix-range-input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 8px;
+  background: var(--dark-grey);
+  border-radius: 4px;
+  outline: none;
+}
+
+.matrix-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--dark);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.matrix-range-input::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.matrix-comparison-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+
+.matrix-card {
+  padding: 1.5em;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.immediate-card {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.projected-card {
+  background-color: var(--grey);
+  border: 1px solid var(--dark-grey);
+}
+
+.matrix-card-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.matrix-stat-val {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.matrix-stat-time {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.matrix-card-desc {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.matrix-buffer-section {
+  margin-top: 1em;
+  padding: 1.5em;
+  background-color: var(--grey);
+  border-radius: 16px;
+}
+
+.matrix-buffer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.matrix-dashboard-header h3 {
+  line-height: 1.1;
+  word-break: normal;
+}
+
+.matrix-container .quiz-content-scrollable::-webkit-scrollbar {
+  display: none;
+}
+.matrix-container .quiz-content-scrollable {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .matrix-comparison-cards {
+    grid-template-columns: 1fr;
+  }
+  .matrix-dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  .matrix-dashboard-header h3 {
+    font-size: 1.5rem;
+  }
+  .matrix-slider-labels {
+    font-size: 0.65rem;
+  }
+  .matrix-stat-val {
+    font-size: 2rem;
+  }
+  .matrix-dashboard-phase {
+    padding: 1.5em 1em;
   }
 }
