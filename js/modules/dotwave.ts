@@ -9,10 +9,10 @@ export class DotWaveController {
     dotGap: 20,
     dotRadiusMax: 3,
     expansionSpeed: 250, // px per second
-    lightIntensity: 0.4,
+    lightIntensity: 0.15,
     fadeIntensity: 0.08,
     baseRadius: 1,
-    baseOpacity: 0.05,
+    baseOpacity: 0.02,
     dotColor: '0, 0, 0' // Dark dots for the light hero theme
   };
 

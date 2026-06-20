@@ -3652,6 +3652,8 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--dark-grey);
+  position: relative;
+  z-index: 1;
 }
 
 .companion-content-wrapper {
@@ -3659,6 +3661,8 @@
   flex-direction: column;
   flex: 1;
   min-height: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .chat-messages::-webkit-scrollbar {

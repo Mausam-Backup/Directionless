@@ -1,3 +1,5 @@
+import { dotWaveController } from './dotwave.ts';
+
 export const companionController = {
   state: {
     conversation: [] as any[],
@@ -76,8 +78,9 @@ You are not here to impress. You are here to listen. That's it.`,
   injectModalMarkup() {
     const modalHtml = `
       <div id="companion-modal" class="wellbeing-quiz-overlay" role="dialog" aria-modal="true">
-        <div class="wellbeing-quiz-container companion-container">
-          <button class="quiz-close-btn companion-close-btn" aria-label="Close Companion">&times;</button>
+        <div class="wellbeing-quiz-container companion-container" style="position: relative; overflow: hidden;">
+          <canvas id="dot-wave-canvas" class="dot-wave-canvas"></canvas>
+          <button class="quiz-close-btn companion-close-btn" aria-label="Close Companion" style="z-index: 10;">&times;</button>
           
           <div class="quiz-modal-header companion-header">
             <span class="quiz-category-tag">Companion</span>
@@ -121,6 +124,11 @@ You are not here to impress. You are here to listen. That's it.`,
     `;
 
     document.body.insertAdjacentHTML('beforeend', modalHtml);
+    
+    // Initialize the background wave once the canvas is in the DOM
+    setTimeout(() => {
+      dotWaveController.init();
+    }, 50);
   },
 
   bindModalEvents() {
