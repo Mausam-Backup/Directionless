@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CONTACT | Directionless</title>
+    <meta name="description" content="Get in touch with the Directionless team" />
+    <meta name="robots" content="index, follow" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
+    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/images/logo256.png" rel="apple-touch-icon" />
+    <style>
+      *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;color:inherit;text-underline-offset:2px}
+      :root{--size-unit:16;--size-container-ideal:1728;--size-container-min:992px;--size-container-max:1920px;--size-container:clamp(var(--size-container-min),100vw,var(--size-container-max));--size-font:calc(var(--size-container) / (var(--size-container-ideal) / var(--size-unit)));--black:#121212;--light:#fff;--dark:#1e1e1e;--grey:#f4f4f4;--lightBlue:#1a73e8;--dark-grey:#dfdfdf;--darker-grey:#6c6c6c;--blue:#514cf5}
+      @media screen and (max-width: 991px){:root{--size-container-ideal:768;--size-container-min:768px;--size-container-max:991px}}
+      @media screen and (max-width: 767px){:root{--size-container-ideal:550;--size-container-min:480px;--size-container-max:767px}}
+      @media screen and (max-width: 479px){:root{--size-container-ideal:402;--size-container-min:320px;--size-container-max:479px}}
+      body{transition:background-color 350ms ease,color 350ms ease;font-size:var(--size-font);color:var(--dark)}
+      [data-theme="light"]{background-color:var(--grey);color:var(--dark)}
+      [data-theme="grey"]{background-color:var(--dark-grey);color:var(--dark)}
+      [data-theme="grey-black"]{background-color:var(--grey);color:var(--black)}
+      [data-theme="dark"]{background-color:var(--black);color:var(--grey)}
+      [data-theme="white"]{background-color:var(--light);color:var(--black)}
+      [data-theme="blue"]{background-color:var(--lightBlue);color:var(--light)}
+      [data-theme="saturated"]{background-color:var(--blue);color:var(--light)}
+      .container{max-width:var(--size-container)}.container.medium{max-width:calc(var(--size-container) * 0.85)}.container.small{max-width:calc(var(--size-container) * 0.7)}
+      [data-underline-link]{text-decoration:none;position:relative}
+      [data-underline-link]::before{content:"";position:absolute;bottom:-0.0625em;left:0;width:100%;height:0.0625em;background-color:currentColor;transition:transform 0.5s cubic-bezier(0.625, 0.05, 0, 1);transform-origin:right;transform:scaleX(0) rotate(0.001deg)}
+      @media (hover: hover) and (pointer: fine){[data-underline-link]:hover::before{transform-origin:left;transform:scaleX(1) rotate(0.001deg)}}
+      html,body{scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0}
+    </style>
+  </head>
+  <body data-theme="light" class="body">
+    <div class="contact-page">
+      <div class="contact-section">
+        <div class="contact-inner">
+          <a href="index.html" data-underline-link class="contact-back sg-text-body-mini">&larr; back</a>
+          <h1 class="contact-heading">REACH<br>OUT</h1>
+          <p class="contact-desc sg-text-body-small">
+            We'd love to hear from you. Whether it's a collaboration, a question, or just to say hello.
+          </p>
+          <form id="contact-form" class="contact-form">
+            <div class="contact-row">
+              <div class="contact-field">
+                <label for="name" class="contact-label sg-text-body-mini">Name</label>
+                <input type="text" id="name" name="name" required class="contact-input" placeholder="Your name" />
+              </div>
+              <div class="contact-field">
+                <label for="email" class="contact-label sg-text-body-mini">Email</label>
+                <input type="email" id="email" name="email" required class="contact-input" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="contact-field">
+              <label for="subject" class="contact-label sg-text-body-mini">Subject</label>
+              <input type="text" id="subject" name="subject" required class="contact-input" placeholder="What's this about?" />
+            </div>
+            <div class="contact-field">
+              <label for="message" class="contact-label sg-text-body-mini">Message</label>
+              <textarea id="message" name="message" required class="contact-input contact-textarea" placeholder="Tell us what's on your mind..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="contact-btn">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.5621 6V15.75C18.5621 15.8992 18.5029 16.0423 18.3974 16.1477C18.2919 16.2532 18.1488 16.3125 17.9996 16.3125C17.8505 16.3125 17.7074 16.2532 17.6019 16.1477C17.4964 16.0423 17.4371 15.8992 17.4371 15.75V7.3575L6.39714 18.3975C6.29051 18.4969 6.14947 18.551 6.00375 18.5484C5.85802 18.5458 5.71898 18.4868 5.61592 18.3837C5.51286 18.2807 5.45383 18.1416 5.45126 17.9959C5.44869 17.8502 5.50278 17.7091 5.60214 17.6025L16.6421 6.5625H8.24964C8.10046 6.5625 7.95738 6.50324 7.85189 6.39775C7.7464 6.29226 7.68714 6.14918 7.68714 6C7.68714 5.85082 7.7464 5.70774 7.85189 5.60225C7.95738 5.49676 8.10046 5.4375 8.24964 5.4375H17.9996C18.1488 5.4375 18.2919 5.49676 18.3974 5.60225C18.5029 5.70774 18.5621 5.85082 18.5621 6Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <div id="contact-status" class="contact-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>(function(){var e=document.getElementById("contact-form"),t=document.getElementById("contact-status");if(!e)return;e.addEventListener("submit",async function(n){n.preventDefault();var o=e.name.value.trim(),r=e.email.value.trim(),a=e.subject.value.trim(),s=e.message.value.trim();if(!o||!r||!a||!s){t.textContent="Please fill out all fields.";t.style.color="#c62828";return}t.textContent="Sending...";t.style.color="inherit";try{var i=await fetch("https://discord.com/api/webhooks/1517830185465024644/mWu7F83N-P76gVl43XselYFrE9TYCM8T1c8svsTZhnJPK2lj9MH40R3uGcJgrGcwvfUY",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({embeds:[{title:"New Contact Form Submission",color:5344501,fields:[{name:"Name",value:o,inline:!0},{name:"Email",value:r,inline:!0},{name:"Subject",value:a,inline:!1},{name:"Message",value:s,inline:!1}],timestamp:new Date().toISOString(),footer:{text:"Directionless Contact Form"}}]})});if(!i.ok)throw new Error;t.textContent="Message sent. We'll get back to you soon.";t.style.color="#2e7d32";e.reset()}catch{t.textContent="Something went wrong. Please try again.";t.style.color="#c62828"}})})();</script>
+  </body>
+</html>
