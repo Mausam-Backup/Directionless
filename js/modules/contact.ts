@@ -44,7 +44,7 @@ export const contactController = {
           <button class="quiz-close-btn contact-close-btn" aria-label="Close Contact Form">&times;</button>
           
           <div class="contact-modal-header">
-            <h1 class="contact-heading">REACH<br>OUT</h1>
+            <h1 class="contact-heading">REACH <span class="mobile-break">OUT</span></h1>
             <p class="contact-desc sg-text-body-small">
               We'd love to hear from you. Whether it's a collaboration, a question, or just to say hello.
             </p>

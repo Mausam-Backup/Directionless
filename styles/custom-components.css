@@ -2409,6 +2409,18 @@
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.wellbeing-quiz-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .wellbeing-quiz-container {
+    border-radius: 16px;
+  }
 }
 
 .wellbeing-quiz-overlay.is-active .wellbeing-quiz-container {
@@ -4078,6 +4090,18 @@
   max-width: 800px;
   display: flex;
   flex-direction: column;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.contact-modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contact-modal-container {
+    border-radius: 16px;
+  }
 }
 
 .contact-modal-header {
@@ -4212,5 +4236,8 @@
   }
   .contact-heading {
     font-size: 3.5em;
+  }
+  .mobile-break {
+    display: block;
   }
 }
