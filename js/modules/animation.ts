@@ -12,6 +12,7 @@ export class AnimationController {
   init() {
     this.runCheckThemeSection();
     const t = new Lenis({ touchMultiplier: 0 });
+    window.lenis = t;
     (t.on("scroll", ScrollTrigger.update),
       gsap.ticker.add((e) => {
         t.raf(1e3 * e);

@@ -55,7 +55,10 @@ export const audioController = {
     });
 
     // Autoplay fallback: start on first user interaction anywhere
-    const onFirstInteraction = () => {
+    const onFirstInteraction = (e: Event) => {
+      if (e.target && (e.target.closest('#wellbeing-quiz-modal') || e.target.closest('#quiz-trigger-card'))) {
+        return; // Ignore quiz interaction
+      }
       if (!isPlaying) {
         playAudio();
       }
