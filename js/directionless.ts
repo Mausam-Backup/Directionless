@@ -4,6 +4,7 @@ import { audioController } from './modules/audio.ts';
 import { quizController } from './modules/quiz.ts';
 import { matrixController } from './modules/matrix.ts';
 import { companionController } from './modules/companion.ts';
+import { dotWaveController } from './modules/dotwave.ts';
 
 const animationController = new AnimationController();
 animationController.init();
@@ -11,3 +12,4 @@ audioController.init();
 quizController.init();
 matrixController.init();
 companionController.init();
+dotWaveController.init();
